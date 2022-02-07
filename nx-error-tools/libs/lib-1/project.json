@@ -3,6 +3,14 @@
   "sourceRoot": "libs/lib-1/src",
   "projectType": "library",
   "targets": {
+    "delay": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "commands": [" npx nx  delay-one common --delay=3"]
+      },
+      "outputs": []
+    },
     "build": {
       "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],

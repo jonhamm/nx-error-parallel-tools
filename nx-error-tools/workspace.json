@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "common": "apps/common",
     "lib-1": "libs/lib-1",
     "lib-2": "libs/lib-2",
     "lib-3": "libs/lib-3",

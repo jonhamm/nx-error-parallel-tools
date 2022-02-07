@@ -1,0 +1,23 @@
+{
+  "projectType": "application",
+  "root": "apps/common",
+  "sourceRoot": "apps/common",
+  "targets": {
+    "delay-all": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "commands": [" npx nx run-many --all --target=delay --exclude=common"]
+      },
+      "outputs": []
+    },
+    "delay-one": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "parallel": false,
+        "commands": [" npx nx workspace-generator my-tool --delay={args.delay}"]
+      },
+      "outputs": []
+    }
+  }
+}
